@@ -5,16 +5,16 @@ import { getCollection } from "astro:content";
 import createSlug from "../../../../lib/createSlug";
 
 export async function getStaticPaths({ paginate }) {
-  const all_posts = await getCollection("blog");
-  const all_tags = all_posts.flatMap((post) => {
-    return post.data.tags || [];
+  const all_projects = await getCollection("project");
+  const all_tags = all_projects.flatMap((project) => {
+    return project.data.tags || [];
   });
 
   return all_tags.flatMap((tag) => {
-    const filtred_posts = all_posts.filter((post) => {
+    const filtred_projects = all_projects.filter((project) => {
       return post.data.tags?.includes(tag);
     });
-    return paginate(filtred_posts, {
+    return paginate(filtred_projects, {
       params: { tag },
       pageSize: 10,
     });
@@ -25,7 +25,7 @@ const { page } = Astro.props;
 const params = Astro.params;
 ---
 
-<BaseLayout title={"Project - " + params.tag} sideBarActiveItemID="blog">
+<BaseLayout title={"Project - " + params.tag} sideBarActiveItemID="project">
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Blog - {params.tag}</div>
   </div>
