@@ -2,6 +2,7 @@
 import { CollectionEntry, getCollection } from "astro:content";
 import { BlogSchema } from "../../content/config";
 import PostLayout from "../../layouts/PostLayout.astro";
+import ListLayout from "../../layouts/ListLayout.astro";
 import createSlug from "../../lib/createSlug"
 
 export async function getStaticPaths() {
@@ -21,14 +22,30 @@ const project: BlogSchema = entry.data;
 const { Content } = await entry.render();
 ---
 
-<PostLayout
-  title={project.title}
-  description={project.description}
-  pubDate={project.pubDate}
-  heroImage={project.heroImage}
-  updatedDate={project.updatedDate}
-  badge={project.badge}
-  tags={project.tags}
->
-  <Content />
-</PostLayout>
+{(project.view == "cardView") &&(
+      <PostLayout
+      title={project.title}
+      description={project.description}
+      pubDate={project.pubDate}
+      heroImage={project.heroImage}
+      updatedDate={project.updatedDate}
+      badge={project.badge}
+      tags={project.tags}
+    >
+      <Content />
+    </PostLayout>
+    )}
+
+{(project.view == "listView") &&(
+      <ListLayout
+      title={project.title}
+      description={project.description}
+      pubDate={project.pubDate}
+      heroImage={project.heroImage}
+      updatedDate={project.updatedDate}
+      badge={project.badge}
+      tags={project.tags}
+    >
+      <Content />
+    </ListLayout>
+)}

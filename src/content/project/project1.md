@@ -1,56 +1,23 @@
 ---
-title: "Project 1"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+title: "Shopping Website"
+description: "This Node.js shopping website enables users to browse products, add items to their cart, and checkout securely, improving my programming, problem-solving, and web development skills."
 pubDate: "Sep 10 2022"
-heroImage: "/post_img.webp"
+heroImage: "/project1.png"
 tags: ["tokio"]
+view: "cardView"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer
-malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas
-pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse
-platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada
-fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus
-vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea
-dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst
-quisque sagittis purus sit amet.
+For my school project, I developed a shopping website using Node.js as the backend framework. This website allows users to browse products, add items to their cart, and complete purchases securely. It also features user authentication, a product search system, and an order history section. The website is designed to be simple, user-friendly, and efficient.
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum
-quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet.
-Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus.
-Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit
-ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt
-dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc.
-Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus
-arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed
-tempus urna et pharetra pharetra massa massa ultricies mi.
+<h2>How This Project Helps Me Improve</h2>
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam
-sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec.
-Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna
-fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et
-egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel
-turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra
-nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus
-vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim
-praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus
-egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam
-ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor
-purus non. Amet dictum sit amet justo donec enim.
+<ul>
+    <li><strong>Enhancing My Programming Skills</strong> – By working with <strong>Node.js</strong>, I have gained experience in backend development, handling databases, and managing APIs. I also learned how to use <strong>Express.js</strong> for routing and <strong>MongoDB/MySQL</strong> for storing data.</li>
+    <li><strong>Problem-Solving & Debugging</strong> – Building the site required me to solve many technical challenges, such as handling <strong>server requests, database queries, and user authentication</strong>. Debugging errors and optimizing performance helped me develop <strong>logical thinking and patience</strong>.</li>
+    <li><strong>Web Development Knowledge</strong> – Through this project, I improved my understanding of <strong>full-stack development</strong>, including frontend technologies like <strong>HTML, CSS, and JavaScript</strong>, as well as backend concepts such as <strong>RESTful APIs</strong>.</li>
+    <li><strong>Time Management & Organization</strong> – Developing a functional website required me to <strong>plan, set deadlines, and manage different tasks</strong>, helping me become more <strong>organized and efficient</strong> in my work.</li>
+    <li><strong>Creativity & User Experience</strong> – Designing a shopping website taught me how to <strong>create an engaging UI/UX</strong> that is simple and intuitive. I learned how to balance <strong>functionality with aesthetics</strong>.</li>
+    <li><strong>Learning Real-World Skills</strong> – This project simulates real-world web development, preparing me for <strong>future projects, internships, or careers</strong> in software development. It also gave me a better understanding of how <strong>e-commerce platforms work</strong>.</li>
+</ul>
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut
-consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra.
-Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor
-dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor
-dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque
-eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim
-blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices
-tincidunt arcu. Id cursus metus aliquam eleifend mi.
-
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus
-imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu
-cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt
-dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat
-sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida.
-Egestas integer eget aliquet nibh praesent tristique magna.
+Overall, this project expanded my technical skills, improved my problem-solving abilities, and strengthened my creativity. It was a valuable learning experience that will help me grow as a developer and a student.
