@@ -2,10 +2,10 @@
 title: "Mini Games"
 description: "I created a series of mini-games to enhance my programming skills, exploring different concepts like logic, physics, and UI design while gaining hands-on experience various languages and frameworks."
 pubDate: "Sep 11 2024"
-heroImage: "/post_img.webp"
+heroImage: "/game.png"
 tags: ["tokio"]
 view: "listView"
-images: [""]
+video: "/minigame.gif"
 ---
 
 To enhance my programming skills, I decided to create a series of mini-games, each designed to challenge me with different aspects of coding. This approach allowed me to practice problem-solving, improve my understanding of various algorithms, and gain experience with different programming languages and frameworks.

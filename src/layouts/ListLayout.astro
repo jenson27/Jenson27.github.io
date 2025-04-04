@@ -6,7 +6,7 @@ import localizedFormat from "dayjs/plugin/localizedFormat";
 
 export interface Props extends BlogSchema {}
 
-const { title, description, pubDate, updatedDate, heroImage, badge, tags = [] } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, badge, tags = [], view, video } = Astro.props;
 dayjs.extend(localizedFormat);
 const displayDate = dayjs(pubDate).format("ll")
 import { Image } from "astro:assets";
@@ -38,7 +38,7 @@ import { Image } from "astro:assets";
       }
       <div class="divider my-2"></div>
       <slot />
-      {heroImage && <Image width={750} height={422} format="webp" src={heroImage} alt={title} class="w-full mb-6" />}
+      {video && <Image width={750} height={422} format="webp" src={video} alt={title} class="w-full mb-6" />}
     </article>
   </main>
 </BaseLayout>
