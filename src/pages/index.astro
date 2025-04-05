@@ -8,7 +8,7 @@ import backgroundImage from '~/../public/background.jpg';
 
 const projects = (await getCollection("project")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
-const last_posts = projects.slice(0, 3);
+const last_projects = projects.slice(0, 3).reverse();
 ---
 
 <BaseLayout sideBarActiveItemID="home">
@@ -32,7 +32,7 @@ Feel free to explore my work, learn more about my expertise, and connect with me
   </div>
 
   {
-    last_posts.map((project) => (
+    last_projects.map((project) => (
       <>
         <HorizontalCard
           title={project.data.title}
