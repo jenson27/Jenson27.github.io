@@ -2,7 +2,7 @@
 title: "Mini Games"
 description: "I created a series of mini-games to enhance my programming skills, exploring different concepts like logic, physics, and UI design while gaining hands-on experience various languages and frameworks."
 pubDate: "Sep 11 2024"
-heroImage: "/project2.png"
+thumbnail: "/project2/project2.png"
 tags: ["project"]
 ---
 
@@ -16,4 +16,4 @@ To enhance my programming skills, I decided to create a series of mini-games, ea
 
 Creating these mini-games has significantly improved my confidence in programming and problem-solving, making it a fun and rewarding way to learn new concepts. Moving forward, I plan to tackle more complex projects and explore game development frameworks in greater depth.
 
-<Image width="750" height="422" format="gif" src="/minigame.gif" alt="game" class="w-full mb-6" />
+<Image width="750" height="422" format="gif" src="/project2/minigame.gif" alt="game" class="w-full mb-6" />

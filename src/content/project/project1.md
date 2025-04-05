@@ -2,7 +2,7 @@
 title: "E-Commerce Webpage Template"
 description: "This Node.js shopping website enables users to browse products, add items to their cart, and checkout securely, improving my programming, problem-solving, and web development skills."
 pubDate: "Sep 10 2022"
-heroImage: "/project1.png"
+thumbnail: "/project1/project1.png"
 tags: ["project"]
 ---
 
