@@ -4,7 +4,6 @@ description: "This Node.js shopping website enables users to browse products, ad
 pubDate: "Sep 10 2022"
 heroImage: "/project1.png"
 tags: ["project"]
-view: "cardView"
 ---
 
 For this project, I developed a shopping website using Node.js as the backend framework. This website allows users to browse products, add items to their cart, and complete purchases securely. It also features user authentication, a product search system, and an order history section. The website is designed to be simple, user-friendly, and efficient.

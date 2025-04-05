@@ -22,31 +22,14 @@ const project: BlogSchema = entry.data;
 const { Content } = await entry.render();
 ---
 
-{(project.view == "cardView") &&(
-      <PostLayout
-      title={project.title}
-      description={project.description}
-      pubDate={project.pubDate}
-      heroImage={project.heroImage}
-      updatedDate={project.updatedDate}
-      badge={project.badge}
-      tags={project.tags}
-    >
-      <Content />
-    </PostLayout>
-    )}
-
-{(project.view == "listView") &&(
-      <ListLayout
-      title={project.title}
-      description={project.description}
-      pubDate={project.pubDate}
-      heroImage={project.heroImage}
-      updatedDate={project.updatedDate}
-      badge={project.badge}
-      tags={project.tags}
-      video={project.video}
-    >
-      <Content />
-    </ListLayout>
-)}
+<PostLayout
+  title={project.title}
+  description={project.description}
+  pubDate={project.pubDate}
+  heroImage={project.heroImage}
+  updatedDate={project.updatedDate}
+  badge={project.badge}
+  tags={project.tags}
+  >
+  <Content />
+</PostLayout>

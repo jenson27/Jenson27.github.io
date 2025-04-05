@@ -4,8 +4,6 @@ description: "I created a series of mini-games to enhance my programming skills,
 pubDate: "Sep 11 2024"
 heroImage: "/project2.png"
 tags: ["project"]
-view: "listView"
-video: "/minigame.gif"
 ---
 
 To enhance my programming skills, I decided to create a series of mini-games, each designed to challenge me with different aspects of coding. This approach allowed me to practice problem-solving, improve my understanding of various algorithms, and gain experience with different programming languages and frameworks.
@@ -17,3 +15,5 @@ To enhance my programming skills, I decided to create a series of mini-games, ea
 </ul>
 
 Creating these mini-games has significantly improved my confidence in programming and problem-solving, making it a fun and rewarding way to learn new concepts. Moving forward, I plan to tackle more complex projects and explore game development frameworks in greater depth.
+
+<Image width="750" height="422" format="gif" src="/minigame.gif" alt="game" class="w-full mb-6" />
