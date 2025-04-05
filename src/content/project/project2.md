@@ -2,7 +2,7 @@
 title: "Mini Games"
 description: "I created a series of mini-games to enhance my programming skills, exploring different concepts like logic, physics, and UI design while gaining hands-on experience various languages and frameworks."
 pubDate: "Sep 11 2024"
-heroImage: "/game.png"
+heroImage: "/project2.png"
 tags: ["tokio"]
 view: "listView"
 video: "/minigame.gif"
