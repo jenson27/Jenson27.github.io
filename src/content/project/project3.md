@@ -2,7 +2,7 @@
 title: "Chat Bot API"
 description: "This Discord bot is built using the powerful Discord.js API and is designed to enhance server engagement and moderation with a mix of utility, interaction, and entertainment features."
 pubDate: "Sep 11 2024"
-heroImage: "/project2.png"
+heroImage: "/project3/discord.png"
 tags: ["project"]
 ---
 
