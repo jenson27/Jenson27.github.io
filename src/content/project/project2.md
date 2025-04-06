@@ -10,6 +10,12 @@ To enhance my programming skills, I decided to create a series of mini-games, ea
 
 <Image width="750" height="422" format="gif" src="/project2/minigame.gif" alt="game" class="w-full mb-6" />
 
+<h2 class="card-title">
+    🎮 Games I've Worked On
+</h2>
+
+I began by identifying a set of simple yet engaging mini-games that would allow me to explore different programming concepts. Some of the games I worked on included:
+
 <ul>
   <li><strong>Tic-Tac-Toe:</strong> Implementing logic for checking win conditions and managing a simple AI opponent.</li>
   <li><strong>Snake Game:</strong> Working with graphics, collision detection, and game loops.</li>
@@ -18,7 +24,7 @@ To enhance my programming skills, I decided to create a series of mini-games, ea
 </ul>
 
 <h2 class="card-title">
-    Flappy Bird Clone Development
+    🐤 Flappy Bird Clone Development
 </h2>
 
 Diving deeper into one of the games i made, creating a Flappy Bird clone was an exciting challenge that helped me improve my understanding of physics-based movement and collision detection.
@@ -26,7 +32,7 @@ Diving deeper into one of the games i made, creating a Flappy Bird clone was an 
 <Image width="750" height="422" format="gif" src="/project2/flappybird.gif" alt="game" class="w-full mb-6" />
 
 <h2 class="card-title">
-    The key aspects of development included:
+    💬 The key aspects of development included:
 </h2>
 
 <ul>
@@ -37,7 +43,7 @@ Diving deeper into one of the games i made, creating a Flappy Bird clone was an 
 </ul>
 
 <h2 class="card-title">
-    Key Takeaways
+    💬 Key Takeaways
 </h2>
 
 Through this process, I gained hands-on experience with:
