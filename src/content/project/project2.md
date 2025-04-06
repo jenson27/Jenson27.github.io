@@ -14,6 +14,7 @@ To enhance my programming skills, I decided to create a series of mini-games, ea
   <li><strong>Tic-Tac-Toe:</strong> Implementing logic for checking win conditions and managing a simple AI opponent.</li>
   <li><strong>Snake Game:</strong> Working with graphics, collision detection, and game loops.</li>
   <li><strong>Flappy Bird Clone:</strong> Developing physics-based movement and collision detection.</li>
+  <li><strong>Minesweeper:</strong> Practicing grid-based logic, recursive algorithms, and user interaction handling.</li>
 </ul>
 
 <h2 class="card-title">
