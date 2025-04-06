@@ -1,7 +1,7 @@
 ---
 title: "7 Habits of Highly Effective Youth"
 description: "This program helps youth develop key life and leadership skills for personal and academic success."
-pubDate: "Sep 10 2022"
+pubDate: "Aug 27 2018"
 thumbnail: "/certificates/cert1.jpg"
 tags: ["certification"]
 ---

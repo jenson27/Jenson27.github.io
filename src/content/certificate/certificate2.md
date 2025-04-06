@@ -1,7 +1,7 @@
 ---
 title: "NYP – Reimagine the Next Disruptive Technology for Emerging Areas"
 description: "This certification program focused on exploring and conceptualizing disruptive technologies with the potential to shape the future across various emerging sectors."
-pubDate: "Sep 10 2022"
+pubDate: "Oct 6 2020"
 thumbnail: "/certificates/cert2.png"
 tags: ["certification"]
 ---

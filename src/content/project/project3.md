@@ -1,7 +1,7 @@
 ---
 title: "Chat Bot API"
 description: "This Discord bot is built using the powerful Discord.js API and is designed to enhance server engagement and moderation with a mix of utility, interaction, and entertainment features."
-pubDate: "Sep 11 2024"
+pubDate: "Aug 16 2023"
 thumbnail: "/project3/thumbnail.png"
 tags: ["project"]
 ---
@@ -52,6 +52,8 @@ I decided to incorporate interactive exploration into the game, allowing users t
   <li>Guild-specific settings such as command prefixes, enabled features, and role configurations.</li>
   <li>Schema-based data modeling with Mongoose to ensure consistency and scalability.</li>
 </ul>
+
+<Image width="750" height="422" format="png" src="/project3/db.png" alt="game" class="w-full mb-6" />
 
 <h2 class="card-title">
     💬 Development Challenges

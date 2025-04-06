@@ -1,7 +1,7 @@
 ---
 title: "Fundamentals of Deep Learning"
 description: "This certification course from NVIDIA introduces the basics of deep learning in a really hands-on, practical way."
-pubDate: "Sep 10 2022"
+pubDate: "Mar 7 2022"
 thumbnail: "/certificates/cert4.png"
 tags: ["certification"]
 ---

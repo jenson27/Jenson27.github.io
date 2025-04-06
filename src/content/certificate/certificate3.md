@@ -1,7 +1,7 @@
 ---
 title: "Joint ITE-Oracle Certificate in Essentials of Java Programming "
 description: "This Certificate is an industry-recognized certification that provides foundational training in Java programming"
-pubDate: "Sep 10 2022"
+pubDate: "Mar 28 2019"
 thumbnail: "/certificates/cert3.jpg"
 tags: ["certification"]
 ---
