@@ -28,7 +28,6 @@ This Discord bot is built using the powerful Discord.js API and is designed to e
 </ul>
 
 <Image width="750" height="422" format="png" src="/project3/gif.png" class="w-full mb-6" />
-<Image width="750" height="422" format="png" src="/project3/status.png" class="w-full mb-6" />
 
 <h2 class="card-title">
     🎮 Game Mechanics
