@@ -17,7 +17,7 @@ To enhance my programming skills, I decided to create a series of mini-games, ea
 I began by identifying a set of simple yet engaging mini-games that would allow me to explore different programming concepts. Some of the games I worked on included:
 
 <ul>
-  <li><strong>Tic-Tac-Toe:</strong> Implementing logic for checking win conditions and managing a simple AI opponent.</li>
+  <li><strong>Tic-Tac-Toe:</strong> Implementing logic for checking win condition.</li>
   <li><strong>Snake Game:</strong> Working with graphics, collision detection, and game loops.</li>
   <li><strong>Flappy Bird Clone:</strong> Developing physics-based movement and collision detection.</li>
   <li><strong>Minesweeper:</strong> Practicing grid-based logic, recursive algorithms, and user interaction handling.</li>
@@ -32,7 +32,7 @@ Diving deeper into one of the games i made, creating a Flappy Bird clone was an 
 <Image width="750" height="422" format="gif" src="/project2/flappybird.gif" alt="game" class="w-full mb-6" />
 
 <h2 class="card-title">
-    💬 The key aspects of development included:
+    💡 The key aspects of development included:
 </h2>
 
 <ul>
@@ -43,8 +43,24 @@ Diving deeper into one of the games i made, creating a Flappy Bird clone was an 
 </ul>
 
 <h2 class="card-title">
-    💬 Key Takeaways
+    🐍 Snake Game
 </h2>
+
+Another example i would like to show is the recreation of snake. In this classic game, I implemented the snake's movement using basic controls and collision detection. The snake grows longer each time it eats food, and the game ends if the snake collides with itself or the boundaries. I focused on managing the game loop and handling the snake’s direction.
+
+<Image width="750" height="422" format="gif" src="/project2/snake.gif" alt="game" class="w-full mb-6" />
+
+<h2 class="card-title">
+    🛠️ Development Process
+</h2>
+
+<ul>
+  <li><strong>Playing Field Representation:</strong> A 2D array represents the grid, where each element indicates whether a cell is empty, contains food, or has a segment of the snake’s body.</li>
+  <li><strong>Snake Representation:</strong> The snake's body is stored as a list of coordinates in the 2D array.</li>
+  <li><strong>Collision Detection:</strong> The array is used to check for collisions between the snake’s head, its body, food, and the boundaries of the field.</li>
+  <li><strong>Movement and Growth:</strong> The snake moves by updating the head’s position, and the array is updated to reflect the new position. Eating food increases the snake’s length, adding new segments.</li>
+  <li><strong>Boundary Handling:</strong> Boundaries can be marked with a specific value, making it easy to detect if the snake hits a wall.</li>
+</ul>
 
 Through this process, I gained hands-on experience with:
 
