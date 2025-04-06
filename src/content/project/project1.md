@@ -21,4 +21,4 @@ For this project, I developed a shopping website using Node.js as the backend fr
     <li><strong>Learning Real-World Skills</strong> – This project simulates real-world web development, preparing me for <strong>future projects, internships, or careers</strong> in software development. It also gave me a better understanding of how <strong>e-commerce platforms work</strong>.</li>
 </ul>
 
-Overall, this project expanded my technical skills, improved my problem-solving abilities, and strengthened my creativity. It was a valuable learning experience that will help me grow as a developer and a student.
+Overall, this project expanded my technical skills, improved my problem-solving abilities, and strengthened my creativity. It was a valuable learning experience that will help me grow as a developer.
