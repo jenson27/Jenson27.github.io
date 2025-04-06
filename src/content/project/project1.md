@@ -8,7 +8,9 @@ tags: ["project"]
 
 For this project, I developed a shopping website using Node.js as the backend framework. This website allows users to browse products, add items to their cart, and complete purchases securely. It also features user authentication, a product search system, and an order history section. The website is designed to be simple, user-friendly, and efficient.
 
-<h2>How This Project Helps Me Improve</h2>
+<h2 class="card-title">
+    How This Project Helps Me Improve
+</h2>
 
 <ul>
     <li><strong>Enhancing My Programming Skills</strong> – By working with <strong>Node.js</strong>, I have gained experience in backend development, handling databases, and managing APIs. I also learned how to use <strong>Express.js</strong> for routing and <strong>MongoDB/MySQL</strong> for storing data.</li>
