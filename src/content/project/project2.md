@@ -32,7 +32,7 @@ Diving deeper into one of the games i made, creating a Flappy Bird clone was an 
 <Image width="750" height="422" format="gif" src="/project2/flappybird.gif" alt="game" class="w-full mb-6" />
 
 <h2 class="card-title">
-    💡 The key aspects of development included:
+    🛠️ Development Process
 </h2>
 
 <ul>
