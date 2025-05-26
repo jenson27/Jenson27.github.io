@@ -37,4 +37,4 @@ Each extracted image frame is processed and converted into a grid of ASCII chara
 
 <Image width="750" height="422" format="png" src="/project4/ascii.png" class="w-full mb-6" />
 
-This project is available on GitHub: https://github.com/jenson27/VidToASCII. Feel free to check it out, try it yourself, and contribute!
+This project is available on GitHub: https://github.com/jenson27/VidToASCII. Feel free to check it out, try it yourself.
