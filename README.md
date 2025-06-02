@@ -1,25 +1,19 @@
-# Astrofy | Personal Portfolio Website Template
+# My Personal Portfolio
 
-![Astrofy | Personal Porfolio Website Template](public/social_img.webp)
-
-Astrofy is a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS. Create in minutes a website with a Blog, CV, Project Section, Store, and RSS Feed.
-
-## Demo
-
-View a live demo of [Astrofy](https://astrofy-template.netlify.app/)
+This portfolio was made with the Astrofy library, however i have heavily edited it.
 
 ## Installation
 
 Run the following command in your terminal
 
-```bash
-pnpm install
+```Command Prompt
+npm install
 ```
 
 Once the packages are installed you are ready to run astro. Astro comes with a built-in development server that has everything you need for project development. The astro dev command will start the local development server so that you can see your new website in action for the very first time.
 
-```bash
-pnpm run dev
+```Command Prompt
+npm run dev
 ```
 
 ## Tech Stack
@@ -44,18 +38,24 @@ pnpm run dev
 │   │   └── SideBarMenu.astro
 │   │   └── SideBarFooter.astro
 │   ├── content/
-│   │   ├── blog/
-│   │   │   ├── post1.md
-│   │   │   ├── post2.md
-│   │   │   └── post3.md
-│   │   ├── store/
-│   │   │   ├── item1.md
-│   │   │   ├── item2.md
+│   │   ├── certificate/
+│   │   │   ├── certificate1.md
+│   │   │   ├── certificate2.md
+│   │   │   ├── certificate3.md
+│   │   │   └── certificate4.md
+│   │   ├── project/
+│   │   │   ├── project1.md
+│   │   │   ├── project2.md
+│   │   │   ├── project3.md
+│   │   │   └── project4.md
 │   ├── layouts/
 │   │   └── BaseLayout.astro
 │   │   └── PostLayout.astro
 │   └── pages/
-│   │   ├── blog/
+│   │   ├── certificates/
+│   │   │   ├── [...page].astro
+│   │   │   ├── [slug].astro
+│   │   ├── projects/
 │   │   │   ├── [...page].astro
 │   │   │   ├── [slug].astro
 │   │   └── cv.astro
@@ -84,26 +84,9 @@ You can change global site configuration on '/src/config.ts' file:
 - **GENERATE_SLUG_FROM_TITLE**: By default Astrofy will generate the blog slug pages base on the article name. Set this var to false if you want to use the Astro file base (Compatible with Astrofy older versions).
 - **TRANSITION_API**: Enable and disable transition API
 
-### Components usage
-
-#### Layout Components
-
-The `BaseHead`, `Footer`, `Header`, and `SideBar` components are already included in the layout system. To change the website content you can edit the content of these components.
-
 ##### SideBar
 
-In the Sidebar you can change your profilePicture, links to all your website pages, and your social icons.
-
-You can change your avatar shape using [mask classes](https://daisyui.com/components/mask/).
-
-The used social-icons are SVG form [BoxIcons](https://boxicons.com/) pack. You can replace the icons in the `SideBarFooter` component
-
-To add a new page in the sidebar go to the `SideBarMenu` component.
-
-```
-<li><a class="py-3 text-base" id="home" href="/">Home</a></li>
-
-```
+dasd
 
 **Note**: In order to change the sidebar menu's active item, you need to setup the prop `sideBarActiveItemID` in the `BaseLayout` component of your new page and add that id to the link in the `SideBarMenu`
 
@@ -223,7 +206,7 @@ Add your `md` item in the `/pages/shop/` folder.
 
 The `[page].astro` is the route to work with the paginated item list. You can change there the number of items listed for each page and the pagination button labels. The shop will render all `.md` files you include inside this folder.
 
-##### Item format
+##### Item format4
 
 Add code with this format at the top of each item file.
 
