@@ -113,13 +113,11 @@ To add a new page, please navigate to the following filepath
 ```
 Portfolio\src\pages\[certificate / project]
 ```
-Create a `.astro` file and add code with this format at the top of each file with the following file below.
+Create a `.astro` file, your directory should look something like that, or you can simply clone the astrofile from the other directory and edit it accordingly
 
 - pageName.astro
 - [...page].astro
 - [slug].astro
-
-Note: your directory should look something like that or u can simply clone the astrofile from the other directory and edit it accordingly
 
 ##### Item format
 
