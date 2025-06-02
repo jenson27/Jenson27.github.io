@@ -85,128 +85,43 @@ You can change global site configuration on '/src/config.ts' file:
 - **TRANSITION_API**: Enable and disable transition API
 
 ##### SideBar
-
-dasd
-
-**Note**: In order to change the sidebar menu's active item, you need to setup the prop `sideBarActiveItemID` in the `BaseLayout` component of your new page and add that id to the link in the `SideBarMenu`
-
-#### TimeLine
-
-The timeline components are used to confirm the CV.
-
-```html
-<div class="time-line-container">
-  <TimeLineElement title="Element Title" subtitle="Subtitle">
-    Content that can contain
-    <div>divs</div>
-    and <span>anything else you want</span>.
-  </TimeLineElement>
-  ...
-</div>
+To update the sidebar, please navigate to the following file path
+```
+Portfolio\src\components\SideBarMenu.astro
 ```
 
-#### Card & HorizontalCard
-
-The cards are primarly used for the Project and the Blog components. They include a picture, a title, and a description. 
-
-```html
-<HorizontalCard title="Card Title" img="imge_url" desc="Description" url="Link
-URL" target="Optional link target (_blank default)" badge="Optional badge"
-tags={['Array','of','tags']} />
+##### Adding of Certificate / Project
+To add a new certificate / project, please navigate to the following filepath
+```
+Portfolio\src\content\[certificate / project]
 ```
 
-#### HorizontalCard Shop Item
-
-
-This component is already included in the Store layout of the template. In case you want to use it in another place these are the props.
-
-```html
-<HorizontalShopItem
-  title="Item Title"
-  img="imge_url"
-  desc="Item description"
-  pricing="current_price"
-  oldPricing="old_price"
-  checkoutUrl="external store checkout url"
-  badge="Optional badge"
-  url="item details url"
-  custom_link="Custom link url"
-  custom_link_label="Cutom link btn label"
-  target="Optional link target (_self default)"
-/>
-```
-
-#### Adding a Custom Component
-
-To add a custom component, you can create a .astro file in the components folder under the source folder. 
-
-Components must follow this template. The ```---``` represents the code fence and uses Javascript and can be used for imports. 
-
-The HTML component is the actual style of your new component. 
-
-```html
----
-// Component Script (JavaScript)
----
-<!-- Component Template (HTML + JS Expressions) -->
-```
-
-For more details, see the [astro components](https://docs.astro.build/en/core-concepts/astro-components/) documentation here. 
-
-### Layouts
-
-Include `BaseLayout` in each page you add and `PostLayout` to your post pages.
-
-The BaseLayout defines a general template for each new webpage you want to add. It imports constants SITE_TITLE and SITE_DESCRIPTION which can be modified in the ```../config``` folder. Data placed there can be imported anywhere using import. 
-
-### Content
-
-You can add a [content collection](https://docs.astro.build/en/guides/content-collections/) in `/content/' folder, you will need add it at config.ts.
-
-#### config.ts
-
-Where you need to define your content collections, we define our content schemas too.
-
-#### Blog
-
-Add your `md` blog post in the `/content/blog/` folder.
-
-##### Post format
-
-Add code with this format in the top of each post file.
+Create a `.md` file and add code with this format at the top of each file.
 
 ```
 ---
-title: "Post Title"
+title: "Project Title"
 description: "Description"
-pubDate: "Post date format(Sep 10 2022)"
-heroImage: "Post Hero Image URL"
+pubDate: "Project date format(Sep 10 2022)"
+thumbnail: "/project1/project1.png"
+tags: ["project"]
 ---
 ```
 
 ### Pages
+To add a new page, please navigate to the following filepath
+```
+Portfolio\src\pages\[certificate / project]
+```
+Create a `.astro` file and add code with this format at the top of each file with the following file below.
 
-#### Blog
+- pageName.astro
+- [...page].astro
+- [slug].astro
 
-Blog uses Astro's content collection to query post's `md`.
+Note: your directory should look something like that or u can simply clone the astrofile from the other directory and edit it accordingly
 
-##### [page].astro
-
-The `[page].astro` is the route to work with the paginated post list. You can change there the number of items listed for each page and the pagination button labels.
-
-##### [slug].astro
-
-The `[slug].astro` is the base route for every blog post, you can customize the page layout or behaviour, by default uses `content/blog` for content collection and `PostLayout` as layout.
-
-#### Shop
-
-Add your `md` item in the `/pages/shop/` folder.
-
-##### [page].astro
-
-The `[page].astro` is the route to work with the paginated item list. You can change there the number of items listed for each page and the pagination button labels. The shop will render all `.md` files you include inside this folder.
-
-##### Item format4
+##### Item format
 
 Add code with this format at the top of each item file.
 
@@ -226,47 +141,9 @@ checkoutUrl: "https://checkouturl.com/"
 ---
 ```
 
-#### Static pages
+#### Images and videos
+All images and videos are grouped by their respective pages and are stored in the filepath below
 
-The other pages included in the template are static pages. The `index` page belongs to the root page. You can add your pages directly in the `/pages` folder and then add a link to those pages in the `sidebar` component.
-
-Feel free to modify the content included in the pages that the template contains or add the ones you need.
-
-### Theming
-
-To change the template theme change the `data-theme` attribute of the `<html>` tag in `BaseLayout.astro` file.
-
-You can choose among 30 themes available or create your custom theme. See themes available [here](https://daisyui.com/docs/themes/).
-
-## Sitemap
-
-The Sitemap is generated automatically when you build your website in the root of the domain. Please update the `robots.txt` file in the public folder with your site name URL for the Sitemap.
-
-## Deploy
-
-You can deploy your site on your favourite static hosting service such as Vercel, Netlify, GitHub Pages, etc.
-
-The configuration for the deployment varies depending on the platform where you are going to do it. See the [official Astro information](https://docs.astro.build/en/guides/deploy/) to deploy your website.
-
-> **⚠️ CAUTION** </br>
-> The Blog pagination of this template is implemented using dynamic route parameters in its filename and for now this format is incompatible with SSR deploy configs, so please use the default static deploy options for your deployments.
-
-## Contributing
-
-Suggestions and pull requests are welcomed! Feel free to open a discussion or an issue for a new feature request or bug.
-
-One of the best ways to contribute is to grab a [bug report or feature suggestion](https://github.com/manuelernestog/astrofy/issues) that has been marked `accepted` and dig in.
-
-Please be wary of working on issues _not_ marked as `accepted`. Just because someone has created an issue doesn't mean we'll accept a pull request for it.
-
-## License
-
-Astrofy is licensed under the MIT license — see the [LICENSE](https://github.com/manuelernestog/astrofy/blob/main/LICENSE) file for details.
-
-## Contributors
-
-<a href="https://github.com/manuelernestog/astrofy/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=manuelernestog/astrofy" />
-</a>
-
-Made with [contrib.rocks](https://contrib.rocks).
+```
+Portfolio\public
+```
