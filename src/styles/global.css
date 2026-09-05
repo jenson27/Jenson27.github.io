@@ -1,3 +1,13 @@
-.time-line-container>div:last-child .education__time>.education__line {
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=JetBrains+Mono:wght@400;500&display=swap");
+
+.font-display {
+    font-family: "Manrope", ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-mono-code {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+}
+
+.time-line-container > div:last-child .education__time > .education__line {
     display: none;
 }

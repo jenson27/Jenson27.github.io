@@ -12,38 +12,90 @@ const last_projects = projects.slice(0, 3).reverse();
 ---
 
 <BaseLayout sideBarActiveItemID="home">
-  <div class="pb-12 mt-5">
-    <div class="text-xl py-1">Hey there 👋</div>
-    <div class="text-5xl font-bold">I'm Jenson</div>
-    <div class="text-3xl py-3 font-bold">Software Engineer</div>
-    <div class="py-2">
-      <text class="text-lg">
-        This site is a showcase of my passion for programming, problem-solving, and continuous learning. Here, you'll find a collection of projects that reflect my skills, creativity, and dedication to technology. Whether it’s web development, software engineering, or exploring new innovations, this portfolio highlights my journey in the ever-evolving tech landscape.
-
-Feel free to explore my work, learn more about my expertise, and connect with me. I'm always excited about new challenges and opportunities to collaborate!
-      </text>
+  <section class="grid gap-10 md:grid-cols-[1.15fr_1fr] md:items-center pt-2 pb-16">
+    <div>
+      <p class="reveal font-mono-code text-sm text-base-content/50 mb-3" style="animation-delay:0ms">// hey there</p>
+      <h1 class="reveal font-display text-5xl md:text-6xl font-extrabold leading-[1.05] mb-2" style="animation-delay:90ms">
+        I'm Jenson
+      </h1>
+      <p class="reveal font-display text-2xl md:text-3xl font-semibold text-primary mb-5" style="animation-delay:170ms">
+        Software Engineer
+      </p>
+      <div class="reveal space-y-4 text-base leading-relaxed text-base-content/80 max-w-[58ch] mb-8" style="animation-delay:250ms">
+        <p>
+          This site is a showcase of my passion for programming, problem-solving, and continuous learning. Here, you'll find a collection of projects that reflect my skills, creativity, and dedication to technology.
+        </p>
+        <p>
+          Feel free to explore my work, learn more about my expertise, and connect with me. I'm always excited about new challenges and opportunities to collaborate!
+        </p>
+      </div>
+      <div class="reveal flex flex-wrap gap-3" style="animation-delay:330ms">
+        <a href="/projects" class="btn btn-primary">View my work</a>
+      </div>
     </div>
-  </div>
 
-  <Image width={750} height={422} format="jpg" src={backgroundImage} alt={"bgimg"} class="w-full mb-6" />
+    <div class="reveal relative" style="animation-delay:200ms">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="relative rounded-3xl overflow-hidden border border-base-content/10 aspect-[4/3] shadow-2xl">
+        <Image width={800} height={600} format="jpg" src={backgroundImage} alt="Night sky over a still lake" class="w-full h-full object-cover" />
+      </div>
+    </div>
+  </section>
 
-  <div>
-    <div class="text-3xl w-full font-bold mb-2">My last projects</div>
-  </div>
-
-  {
-    last_projects.map((project) => (
-      <>
-        <HorizontalCard
-          title={project.data.title}
-          img={project.data.thumbnail}
-          desc={project.data.description}
-          url={"/projects/" + createSlug(project.data.title, project.slug)}
-          target="_self"
-          badge={project.data.badge}
-        />
-        <div class="divider my-0" />
-      </>
-    ))
-  }
+  <section class="pb-6">
+    <div class="flex items-baseline justify-between mb-4">
+      <h2 class="font-display text-2xl font-bold">My last projects</h2>
+      <a href="/projects" class="link link-hover text-sm text-base-content/60">View all projects</a>
+    </div>
+    <div class="flex flex-col">
+      {
+        last_projects.map((project) => (
+          <>
+            <HorizontalCard
+              title={project.data.title}
+              img={project.data.thumbnail}
+              desc={project.data.description}
+              url={"/projects/" + createSlug(project.data.title, project.slug)}
+              target="_self"
+              badge={project.data.badge}
+            />
+            <div class="divider my-0" />
+          </>
+        ))
+      }
+    </div>
+  </section>
 </BaseLayout>
+
+<style>
+  /* Soft aurora glow behind the hero image, sampled from the night-sky photo itself */
+  .hero-glow {
+    position: absolute;
+    inset: -12%;
+    background:
+      radial-gradient(circle at 28% 22%, rgba(79, 209, 197, 0.35), transparent 60%),
+      radial-gradient(circle at 72% 78%, rgba(124, 131, 253, 0.30), transparent 55%);
+    filter: blur(44px);
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  /* One orchestrated entrance sequence, staggered via inline animation-delay */
+  .reveal {
+    opacity: 0;
+    animation: reveal-up 0.6s ease-out forwards;
+  }
+
+  @keyframes reveal-up {
+    from { opacity: 0; transform: translateY(14px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal {
+      animation: none;
+      opacity: 1;
+      transform: none;
+    }
+  }
+</style>
