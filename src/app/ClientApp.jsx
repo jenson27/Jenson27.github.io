@@ -22,12 +22,28 @@ export default function ClientApp({ initialPath }) {
 
       setMeta('meta[name="description"]', "name", "description");
       setMeta('meta[name="description"]', "content", metadata.description);
+      setMeta('meta[name="title"]', "name", "title");
+      setMeta('meta[name="title"]', "content", metadata.title);
+      setMeta('meta[property="og:type"]', "property", "og:type");
+      setMeta('meta[property="og:type"]', "content", metadata.ogType);
+      setMeta('meta[property="og:url"]', "property", "og:url");
+      setMeta('meta[property="og:url"]', "content", metadata.url);
       setMeta('meta[property="og:title"]', "property", "og:title");
       setMeta('meta[property="og:title"]', "content", metadata.title);
       setMeta('meta[property="og:description"]', "property", "og:description");
       setMeta('meta[property="og:description"]', "content", metadata.description);
       setMeta('meta[property="og:image"]', "property", "og:image");
       setMeta('meta[property="og:image"]', "content", new URL(metadata.image, location.origin).href);
+      setMeta('meta[name="twitter:card"]', "name", "twitter:card");
+      setMeta('meta[name="twitter:card"]', "content", "summary_large_image");
+      setMeta('meta[name="twitter:url"]', "name", "twitter:url");
+      setMeta('meta[name="twitter:url"]', "content", metadata.url);
+      setMeta('meta[name="twitter:title"]', "name", "twitter:title");
+      setMeta('meta[name="twitter:title"]', "content", metadata.title);
+      setMeta('meta[name="twitter:description"]', "name", "twitter:description");
+      setMeta('meta[name="twitter:description"]', "content", metadata.description);
+      setMeta('meta[name="twitter:image"]', "name", "twitter:image");
+      setMeta('meta[name="twitter:image"]', "content", new URL(metadata.image, location.origin).href);
     };
 
     const navigate = (nextUrl) => {

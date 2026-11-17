@@ -26,7 +26,7 @@ function routePath(path) {
 
 export function entryPath(section, entry) {
   if (section === "store") return `/store/${entry.slug}`;
-  return `/${section}/${createSlug(entry.title, entry.slug)}`;
+  return `/${section}/${createSlug(entry.title)}`;
 }
 
 export function getEntries(section) {
@@ -49,8 +49,6 @@ export function resolveRoute(path) {
 
   if (currentPath === "/") return { type: "home" };
   if (currentPath === "/cv") return { type: "cv" };
-  if (currentPath === "/services") return { type: "services" };
-
   const tagMatch = currentPath.match(/^\/(blog|projects|certificates)\/tag\/([^/]+)(?:\/(\d+))?$/);
   if (tagMatch) {
     return {
@@ -70,7 +68,7 @@ export function resolveRoute(path) {
   if (detailMatch) {
     const [, section, slug] = detailMatch;
     const entry = getEntries(section).find((item) =>
-      section === "store" ? item.slug === slug : createSlug(item.title, item.slug) === slug
+      section === "store" ? item.slug === slug : createSlug(item.title) === slug
     );
     return entry ? { type: "detail", section, entry } : { type: "notFound" };
   }
@@ -86,7 +84,6 @@ export function getPageMeta(path) {
   let ogType = "website";
 
   if (route.type === "cv") title = "Resume";
-  if (route.type === "services") title = "Projects";
   if (route.type === "list") {
     title = route.tag ? `${sections[route.section].label} - ${route.tag}` : sections[route.section].label;
   }
@@ -102,7 +99,7 @@ export function getPageMeta(path) {
 }
 
 export function getStaticRoutes() {
-  const routes = new Set(["/", "/cv/", "/services/"]);
+  const routes = new Set(["/", "/cv/"]);
 
   for (const section of Object.keys(sections)) {
     const entries = getEntries(section);

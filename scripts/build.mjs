@@ -1,6 +1,6 @@
 import React from "react";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
-import { dirname, resolve } from "node:path";
+import { dirname, isAbsolute, relative, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 import { renderToString } from "react-dom/server";
 import { build, createServer } from "vite";
@@ -57,7 +57,14 @@ function makeMetadata(metadata) {
 function outputPath(route) {
   if (route === "/") return resolve(dist, "index.html");
   const directory = decodeURIComponent(route.replace(/^\/|\/$/g, ""));
-  return resolve(dist, directory, "index.html");
+  const pagePath = resolve(dist, directory, "index.html");
+  const relativePath = relative(dist, pagePath);
+
+  if (relativePath === ".." || relativePath.startsWith(".." + sep) || isAbsolute(relativePath)) {
+    throw new Error("Refusing to write route outside dist: " + route);
+  }
+
+  return pagePath;
 }
 
 try {
@@ -80,7 +87,7 @@ try {
 
   const content = JSON.parse(await readFile(resolve(root, "src/content.generated.json"), "utf8"));
   const blogItems = content.blog.map((entry) => {
-    const link = `${siteUrl}/blog/${createSlug(entry.title, entry.slug)}/`;
+    const link = `${siteUrl}/blog/${createSlug(entry.title)}/`;
     return `<item><title>${escapeXml(entry.title)}</title><link>${escapeXml(link)}</link><guid isPermaLink="true">${escapeXml(link)}</guid><pubDate>${new Date(entry.pubDate).toUTCString()}</pubDate><description>${escapeXml(entry.description)}</description></item>`;
   }).join("\n");
 

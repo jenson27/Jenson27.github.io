@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 import matter from "gray-matter";
 import { unified } from "unified";
 import rehypeRaw from "rehype-raw";
+import rehypeSanitize from "rehype-sanitize";
 import rehypeStringify from "rehype-stringify";
 import remarkGfm from "remark-gfm";
 import remarkParse from "remark-parse";
@@ -19,7 +20,8 @@ const markdownProcessor = unified()
   .use(remarkGfm)
   .use(remarkRehype, { allowDangerousHtml: true })
   .use(rehypeRaw)
-  .use(rehypeStringify, { allowDangerousHtml: true });
+  .use(rehypeSanitize)
+  .use(rehypeStringify);
 
 const content = {};
 
