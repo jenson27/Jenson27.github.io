@@ -8,7 +8,7 @@ tags: ["project"]
 
 To enhance my programming skills, I decided to create a series of mini-games, each designed to challenge me with different aspects of coding. This approach allowed me to practice problem-solving, improve my understanding of various algorithms, and gain experience with different programming languages and frameworks.
 
-<Image width="750" height="422" format="gif" src="/project2/minigame.gif" alt="game" class="w-full mb-6" />
+<img width="750" height="422" src="/project2/minigame.gif" alt="game" class="w-full mb-6" />
 
 <h2 class="card-title">
     🎮 Games I've Worked On
@@ -29,7 +29,7 @@ I began by identifying a set of simple yet engaging mini-games that would allow 
 
 Diving deeper into one of the games i made, creating a Flappy Bird clone was an exciting challenge that helped me improve my understanding of physics-based movement and collision detection.
 
-<Image width="750" height="422" format="gif" src="/project2/flappybird.gif" alt="game" class="w-full mb-6" />
+<img width="750" height="422" src="/project2/flappybird.gif" alt="game" class="w-full mb-6" />
 
 <h2 class="card-title">
     🛠️ Development Process
@@ -48,7 +48,7 @@ Diving deeper into one of the games i made, creating a Flappy Bird clone was an 
 
 Another example i would like to show is the recreation of snake. In this classic game, I implemented the snake's movement using basic controls and collision detection. The snake grows longer each time it eats food, and the game ends if the snake collides with itself or the boundaries. I focused on managing the game loop and handling the snake’s direction.
 
-<Image width="750" height="422" format="gif" src="/project2/snake.gif" alt="game" class="w-full mb-6" />
+<img width="750" height="422" src="/project2/snake.gif" alt="game" class="w-full mb-6" />
 
 <h2 class="card-title">
     🛠️ Development Process

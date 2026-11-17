@@ -1,145 +1,39 @@
-# My Personal Portfolio
+# Jenson's Personal Portfolio
 
-This portfolio was made with the Astrofy library, however i have heavily edited it.
+This portfolio uses React, Vite, Tailwind CSS, and DaisyUI. The build creates static HTML pages for the site's routes so it can deploy to GitHub Pages.
 
-## Installation
+## Getting started
 
-Run the following command in your terminal
+Install dependencies and start the development server:
 
-```Command Prompt
+```sh
 npm install
-```
-
-```Command Prompt
 npm run dev
 ```
 
-## Tech Stack
+Build and preview the site:
 
-- [Astro](https://astro.build)
-- [tailwindcss](https://tailwindcss.com/)
-- [DaisyUI](https://daisyui.com/)
-
-## Project Structure
-
-```php
-├── src/
-│   ├── components/
-│   │   ├── cv/
-│   │   │   ├── TimeLine
-│   │   ├── BaseHead.astro
-│   │   ├── Card.astro
-│   │   ├── Footer.astro
-│   │   ├── Header.astro
-│   │   └── HorizontalCard.astro
-│   │   └── SideBar.astro
-│   │   └── SideBarMenu.astro
-│   │   └── SideBarFooter.astro
-│   ├── content/
-│   │   ├── certificate/
-│   │   │   ├── certificate1.md
-│   │   │   ├── certificate2.md
-│   │   │   ├── certificate3.md
-│   │   │   └── certificate4.md
-│   │   ├── project/
-│   │   │   ├── project1.md
-│   │   │   ├── project2.md
-│   │   │   ├── project3.md
-│   │   │   └── project4.md
-│   ├── layouts/
-│   │   └── BaseLayout.astro
-│   │   └── PostLayout.astro
-│   └── pages/
-│   │   ├── certificates/
-│   │   │   ├── [...page].astro
-│   │   │   ├── [slug].astro
-│   │   ├── projects/
-│   │   │   ├── [...page].astro
-│   │   │   ├── [slug].astro
-│   │   └── cv.astro
-│   │   └── index.astro
-│   │   └── projects.astro
-│   │   └── rss.xml.js
-│   ├── styles/
-│   │   └── global.css
-│   └── config.ts
-├── public/
-│   ├── favicon.svg
-│   └── profile.webp
-│   └── social_img.webp
-├── astro.config.mjs
-├── tailwind.config.cjs
-├── package.json
-└── tsconfig.json
+```sh
+npm run build
+npm run preview
 ```
 
-### Site config
+## Content
 
-You can change global site configuration on '/src/config.ts' file:
+Add or edit Markdown files in `src/content/blog`, `src/content/project`, `src/content/certificate`, or `src/content/store`. Each file uses frontmatter for its title, description, dates, images, tags, and other entry details.
 
-- **SITE_TITLE**: Default pages title.
-- **SITE_DESCRIPTION**: Default pages title.
-- **GENERATE_SLUG_FROM_TITLE**: By default Astrofy will generate the blog slug pages base on the article name. Set this var to false if you want to use the Astro file base (Compatible with Astrofy older versions).
-- **TRANSITION_API**: Enable and disable transition API
+The build renders the Markdown and generates listing, detail, tag, and pagination pages. It also creates the RSS feed and sitemap files.
 
-##### SideBar
-To update the sidebar, please navigate to the following file path
-```
-Portfolio\src\components\SideBarMenu.astro
-```
+## Source structure
 
-##### Adding of Certificate / Project
-To add a new certificate / project, please navigate to the following filepath
-```
-Portfolio\src\content\[certificate / project]
-```
+- `src/app/` contains the app router and browser navigation.
+- `src/pages/` contains route-level page components.
+- `src/components/` contains shared layouts and reusable UI.
+- `src/lib/routes.js` contains route matching and page metadata.
+- `src/content/` contains Markdown content.
+- `src/styles/global.css` contains Tailwind directives and shared styles.
+- `scripts/prepare-content.mjs` prepares Markdown for rendering.
+- `scripts/build.mjs` builds the static pages and metadata.
+- `public/` contains images and other static assets.
 
-Create a `.md` file and add code with this format at the top of each file.
-
-```
----
-title: "Project Title"
-description: "Description"
-pubDate: "Project date format(Sep 10 2022)"
-thumbnail: "/project1/project1.png"
-tags: ["project"]
----
-```
-
-### Pages
-To add a new page, please navigate to the following filepath
-```
-Portfolio\src\pages\[certificate / project]
-```
-Create a `.astro` file, your directory should look something like that, or you can simply clone the astrofile from the other directory and edit it accordingly
-
-- pageName.astro
-- [...page].astro
-- [slug].astro
-
-##### Item format
-
-Add code with this format at the top of each item file.
-
-```js
----
-title: "Demo Item 1"
-description: "Item description"
-heroImage: "Item img url"
-details: true // show or hide details btn
-custom_link_label: "Custom btn link label"
-custom_link: "Custom btn link"
-pubDate: "Sep 15 2022"
-pricing: "$15"
-oldPricing: "$25.5"
-badge: "Featured"
-checkoutUrl: "https://checkouturl.com/"
----
-```
-
-#### Images and videos
-All images and videos are grouped by their respective pages and are stored in the filepath below
-
-```
-Portfolio\public
-```
+GitHub Pages deploys the generated `dist/` directory through `.github/workflows/deploy.yml`.

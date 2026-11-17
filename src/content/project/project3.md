@@ -27,7 +27,7 @@ This Discord bot is built using the powerful Discord.js API and is designed to e
   <li><strong>User Expression with GIFs:</strong> User Expression with GIFs: Allowing users to express themselves more vividly in chat. Through integrated commands or keyword triggers, users can easily search for and share GIF</li>
 </ul>
 
-<Image width="750" height="422" format="png" src="/project3/gif.png" class="w-full mb-6" />
+<img width="750" height="422" src="/project3/gif.png" class="w-full mb-6" />
 
 <h2 class="card-title">
     🎮 Game Mechanics
@@ -40,7 +40,7 @@ This Discord bot is built using the powerful Discord.js API and is designed to e
 
 I decided to incorporate interactive exploration into the game, allowing users to make choices that enhance engagement. This feature not only provides a more immersive experience but also offers rewarding incentives, such as currency and experience points, to further motivate player participation.
 
-<Image width="750" height="422" format="png" src="/project3/gameplay.png" alt="game" class="w-full mb-6" />
+<img width="750" height="422" src="/project3/gameplay.png" alt="game" class="w-full mb-6" />
 
 <h2 class="card-title">
     🗃️ MongoDB Integration
@@ -52,7 +52,7 @@ I decided to incorporate interactive exploration into the game, allowing users t
   <li>Schema-based data modeling with Mongoose to ensure consistency and scalability.</li>
 </ul>
 
-<Image width="750" height="422" format="png" src="/project3/db.png" alt="game" class="w-full mb-6" />
+<img width="750" height="422" src="/project3/db.png" alt="game" class="w-full mb-6" />
 
 <h2 class="card-title">
     💬 Development Challenges
